@@ -1,0 +1,66 @@
+{
+  "name": "Магический глаз",
+  "type": "spell",
+  "img": "icons/magic/perception/eye-ringed-glow-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Вы устанавливаете магическую связь с подчинённым зверем или тратите магический камень, чтобы проецировать зрение прямо в свой разум. Это позволяет вам видеть, игнорируя повреждения или магическую блокировку ваших собственных глаз.</p>\n<hr />\n<p><strong>Длительность:</strong></p>\n<ul>\n<li><strong>1-й уровень:</strong> 1 минута</li>\n<li><strong>2-й уровень:</strong> 10 минут</li>\n<li><strong>3-й уровень:</strong> 1 час</li>\n<li><strong>4-й уровень+:</strong> +1 час за каждый уровень ячейки.</li>\n</ul>\n<p>Пока заклинание активно, вы получаете иммунитет к состоянию @UUID[Compendium.pf2e.conditionitems.Item.XgEqL1kFApUqc5OM]{Ослеплён}.</p>"
+    },
+    "rules": [
+      {
+        "key": "Immunity",
+        "type": "blinded"
+      }
+    ],
+    "level": {
+      "value": 1
+    },
+    "traits": {
+      "value": [
+        "divination",
+        "magical"
+      ],
+      "rarity": "common"
+    },
+    "publication": {
+      "title": "Custom Spell",
+      "authors": "",
+      "license": "OGL",
+      "remaster": true
+    },
+    "category": {
+      "value": "spell"
+    },
+    "traditions": {
+      "value": [
+        "arcane",
+        "primal",
+        "occult"
+      ]
+    },
+    "target": {
+      "value": "self"
+    },
+    "heightening": {
+      "type": "fixed",
+      "levels": {
+        "2": {
+          "duration": {
+            "value": "10 minutes"
+          }
+        },
+        "3": {
+          "duration": {
+            "value": "1 hour"
+          }
+        }
+      }
+    },
+    "duration": {
+      "value": "1 minute"
+    },
+    "cost": {
+      "value": "Магический камень стоимостью 1 зм или наличие подчиненного зверя"
+    }
+  }
+}
